@@ -17,7 +17,6 @@ spec:
       labels:
         app: akka-simple-cluster
     spec:
-      serviceAccountName: akka-simple-cluster
       containers:
       - image: softwaremill/akka-simple-cluster-k8s:0.0.1-SNAPSHOT
         imagePullPolicy: IfNotPresent
