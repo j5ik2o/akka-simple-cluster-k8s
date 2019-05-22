@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-cluster
+  name: akka-simple-cluster
 spec:
   replicas: 5
   selector:

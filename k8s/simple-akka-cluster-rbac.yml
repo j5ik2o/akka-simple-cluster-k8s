@@ -13,7 +13,7 @@ metadata:
   name: akka-simple-cluster
 subjects:
 - kind: User
-  name: system:serviceaccount:default:default
+  name: system:serviceaccount:akka-simple-cluster-ns:default
 roleRef:
   kind: Role
   name: akka-simple-cluster
