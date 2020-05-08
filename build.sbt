@@ -8,18 +8,17 @@ resolvers += Resolver.bintrayRepo("tanukkii007", "maven")
 
 enablePlugins(JavaServerAppPackaging, DockerPlugin)
 
-val akkaVersion = "2.5.19"
-val akkaHttpVersion = "10.1.8"
-val akkaManagementVersion = "1.0.0"
+val akkaVersion = "2.5.30"
+val akkaHttpVersion = "10.1.11"
+val akkaManagementVersion = "1.0.7"
 
 libraryDependencies ++=Seq(
-  "com.typesafe.akka" %% "akka-persistence" % akkaVersion,
   "com.typesafe.akka" %% "akka-persistence" % akkaVersion,
   "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
   "com.typesafe.akka" %% "akka-http-core" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-cluster" % akkaVersion,
-  "com.typesafe.akka" %% "akka-cluster-sharding" % akkaVersion,
+  "com.typesafe.akka" %% "akka-cluster-sharding-typed" % akkaVersion,
   "com.lightbend.akka.management" %% "akka-management" % akkaManagementVersion,
   "com.lightbend.akka.management" %% "akka-management-cluster-http" % akkaManagementVersion,
   "com.lightbend.akka.management" %% "akka-management-cluster-bootstrap" % akkaManagementVersion,
